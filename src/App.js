@@ -1,22 +1,16 @@
-import "./App.css";
-import trophies from "./ps1_apeescape";
-import TrophyCard from "./components/TrophyCard";
-import Navbar from "./components/Navbar";
-
-function TrophyCase(trophy) {
-  return <TrophyCard
-    key={trophy.id}
-    imgURL={trophy.imgURL}
-    name={trophy.name}
-    description={trophy.description}
-  />
-}
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      {trophies.map(TrophyCase)}
+    <div className="App">
+      <h2>Hello, world! Text</h2>
+      <div class="navbar">
+        <ul>
+          <li>Home</li>
+          <li>Projects</li>
+        </ul>
+        <img src="https://carewarriors.org.my/logo.png"></img>
+      </div>
     </div>
   );
 }
