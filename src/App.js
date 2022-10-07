@@ -1,6 +1,7 @@
 import "./App.css";
 import trophies from "./ps1_apeescape";
 import TrophyCard from "./components/TrophyCard";
+import Navbar from "./components/Navbar";
 
 function TrophyCase(trophy) {
   return <TrophyCard
@@ -14,6 +15,7 @@ function TrophyCase(trophy) {
 function App() {
   return (
     <div>
+      <Navbar />
       {trophies.map(TrophyCase)}
     </div>
   );
